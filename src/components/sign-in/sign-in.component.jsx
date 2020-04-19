@@ -32,7 +32,7 @@ class SignIn extends Component {
 
 				<form onSubmit={ this.handleSubmit }>
 					<FormInput name="email" type="email" value={this.state.email} label="email" handleChange={this.handleChange} required />
-					<FormInput name="password" type="password" value={this.state.password} label="password" handleChange={this.handleChange} required />
+					<FormInput name="password" type="password" value={this.state.password} label="password" handleChange={this.handleChange} autoComplete="on" required />
 
 					<div className="buttons">
 						<CustomButton type="submit">Sign in</CustomButton>
